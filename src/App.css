@@ -1,0 +1,257 @@
+/* --------- This is CSS Reset Code --------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, button, span, div, body, textarea {
+	font-family: 'Inter', sans-serif;
+  }
+
+/* --------- Begin your CSS Below here --------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.App {
+	min-height: 100vh;
+	/* background-color: blue; */
+	position: relative;
+}
+
+.main-display-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.main-display-container {
+	width: 100%;
+}
+
+/* header css section ------------------------------*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 60px;
+	width: 100%;
+	background-color: rgb(230, 167, 51);
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-btn {
+	margin: 25px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+.header-btn:hover {
+	cursor: pointer;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+
+
+/* ad banner css section --------------------------------------------------*/
+.adBanner-container {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.adBanner-type {
+	color: white;
+	font-size: 18px;
+}
+
+.adBanner-title {
+	color: rgb(218, 150, 26);
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.adBanner-desc {
+	text-align: center;
+	color: white;
+	max-width: 60%;
+	font-size: 19px;
+}
+
+.blue-btn {
+	color: white;
+	width: 120px;
+	height: 34px;
+	background-color: rgb(49, 156, 156);
+	border: none;
+}
+.blue-btn:hover {
+	cursor: pointer;
+}
+
+
+/* search bar css section -----------------------------------------------*/
+.search-input-container {
+	background-color: rgb(250, 204, 173);
+	width: 400px;
+	height: 35px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 17.5px;
+	padding: 3px;
+}
+
+.search-input-bar {
+	height: 35px;
+	width: 350px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+
+.search-icon-img {
+	width: 32px;
+	/* background-color: blue; */
+}
+
+.search-btn {
+	background-color: transparent;
+	border: none;
+	height: 33px;
+	width: 50px;
+}
+.search-btn:hover {
+	cursor: pointer;
+}
+
+
+/* Recipe View css section -------------------------------------------------*/
+.recipe-cards-container {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 150px;
+}
+
+.recipe-card-container {
+	width: 250px;
+	height: 375px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 15px;
+	margin: 20px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	position: relative;
+}
+
+.recipe-name-text {
+	font-size: 20px;
+	margin-top: 8px;
+}
+
+.card-img-container {
+	width: 100%;
+	height: 240px;
+}
+
+.card-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.recipe-detail-btn {
+	position: absolute;
+	bottom: 10px;
+}
+
+
+/* footer css ---------------------------------------------*/
+footer {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 75px;
+	padding-right: 75px;
+	background-color: rgb(87, 86, 86);
+	position: absolute;
+	bottom: 0;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 9px;
+	background-color: rgb(22, 153, 153);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h5 {
+	color: white;
+	font-size: 20px;
+}
+
+.social-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* DETAIL SCREEN CSS SECTION ---------------------------------------------------------------- */
