@@ -1,4 +1,5 @@
 import "./App.css";
+import './components/newRecipeComponents/newRecipe.css'
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomeScreen from "./components/homeComponents/HomeScreen";
@@ -11,12 +12,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route index element={<HomeScreen />} />
-        <Route path="newRecipe" element={<NewRecipeScreen />} />
-        <Route path="recipe/:id" element={<DetailScreen />} />
-      </Routes>
-
+         <Routes>
+            <Route index element={<HomeScreen />} />
+            <Route path="newRecipe" element={<NewRecipeScreen />} />
+            <Route path="recipe/:id" element={<DetailScreen />} />
+         </Routes>
       <Footer />
     </div>
   );

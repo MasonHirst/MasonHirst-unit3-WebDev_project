@@ -1,0 +1,106 @@
+.add-recipe__title {
+   font-size: 35px;
+   margin: 30px
+}
+
+.add-recipe__form {
+   min-width: 650px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 18px;
+   /* background-color: aqua; */
+   margin-bottom: 40px;
+}
+
+.add-recipe__first-inputs {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+
+.radio-btns-div {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+.radio-spans {
+   display: flex;
+   align-items: center;
+}
+.radio-btn {
+   width: 40px;
+   height: 40px;
+}
+label {
+   position: relative;
+   bottom: -3px;
+}
+
+
+.form__basic-numbers-div {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.add-recipe__list-inputs {
+   display: flex;
+   flex-direction: column;
+   height: 100px;
+   justify-content: space-between;
+}
+
+.add-recipe__ingredient-form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 160px;
+}
+
+.add-recipe__inputs-ul {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   gap: 18px;
+}
+
+.add-recipe__ul {
+   width: 285px;
+   min-height: 100px;
+}
+
+.smaller-input {
+   width: 180px;
+   height: 40px;
+   border: 1px solid black;
+}
+
+.full-input {
+   width: 280px;
+   height: 40px;
+   border: 1px solid black;
+}
+
+
+
+
+.input-text {
+   font-size: 18px;
+   padding: 8px;
+}
+
+textarea {
+   width: 100%;
+   resize: none;
+   border: 1px solid black;
+}
+
+.orange-color {
+   background-color: rgb(218, 150, 26);
+}
