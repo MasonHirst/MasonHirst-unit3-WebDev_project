@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
-import { Formik } from 'formik'
+import { Formik, Field } from 'formik'
+import axios from "axios";
+import Swal from 'sweetalert'
 
 
 const NewRecipeScreen = () => {
@@ -14,9 +16,15 @@ const NewRecipeScreen = () => {
       instructions: ""
    }
 
-   const onSubmit = (values) => {
+   const onSubmit = (values, {resetForm}) => {
       values.ingredients = ingredients
+      axios.post('https://recipes.devmountain.com/recipes', values)
+         .then(res => Swal(`Your '${res.data[0][0].recipe_name}' recipe has been saved!`))
       console.log(values)
+      setIngredients([])
+      resetForm(values = '')
+      nameRef.current.value = ''
+      quantityRef.current.value = ''
    }
 
    const nameRef = useRef()
@@ -64,34 +72,34 @@ const NewRecipeScreen = () => {
 
                   <div className="radio-btns-div">
                      <span className="radio-spans">
-                        <input 
+                        <Field 
                            className="radio-btn input-text" 
                            type='radio' 
                            id="cook-option" 
                            name="type" 
-                           value={values.type} 
+                           value="Cook"
                            onChange={handleChange}
                         />
                         <label className="input-text" for="cook-option">Cook</label>
                      </span>
                      <span className="radio-spans">
-                        <input 
+                        <Field 
                            className="radio-btn input-text" 
                            type='radio' 
                            id="bake-option" 
                            name="type" 
-                           value={values.type} 
+                           value="Bake"
                            onChange={handleChange}
                         />
                         <label className="input-text" for="bake-option">Bake</label>
                      </span>
                      <span className="radio-spans">
-                        <input 
+                        <Field 
                            className="radio-btn input-text" 
                            type='radio' 
                            id="drink-option" 
                            name="type" 
-                           value={values.type} 
+                           value="Drink" 
                            onChange={handleChange}
                         />
                         <label className="input-text" for="drink-option">Drink</label>

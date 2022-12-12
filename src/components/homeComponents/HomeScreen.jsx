@@ -33,35 +33,33 @@ const HomeScreen = () => {
             return recipe.recipe_name.toLowerCase().includes(searchStr.toLowerCase())
         })
         .map((recipe) => {
-            return <RecipeCard 
-            recipe={recipe}
-        />
+            return <RecipeCard recipe={recipe} />
     })
   
 
     return (
-        <div className='main-display-container'>
+      <div className='main-display-container'>
          <AdBanner />
 
             <div className='search-input-container'>
-                <img
+               <img
                     alt='search icon'
                     src={searchIcon}
                     className='search-icon-img'
-                />
+               />
             
-                <input 
+               <input 
                     className='search-input-bar' 
                     placeholder="Search for a recipe"
                     onChange={setSearch}
-                />
+               />
             </div>
 
             <div className='recipe-cards-container'>
-                {recipesDisplay}
+               {recipesDisplay}
             </div>
-        </div>
-    )
+      </div>
+   )
 }
 
 export default HomeScreen

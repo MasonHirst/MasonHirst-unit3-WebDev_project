@@ -102,3 +102,8 @@ textarea {
 .orange-color {
    background-color: rgb(218, 150, 26);
 }
+
+
+.ingredients-placeholder {
+   color: lightgray;
+}

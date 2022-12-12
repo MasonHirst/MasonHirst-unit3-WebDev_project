@@ -295,3 +295,13 @@ h5 {
 
 
 /* Add recipe css section -----------------------------------------------------*/
+
+
+
+.empty-btn {
+   background-color: transparent;
+   border: none;
+}
+.empty-btn:hover {
+   cursor: pointer;
+}
